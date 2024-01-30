@@ -64,7 +64,6 @@ def run_query(header_query, query_statement, sql_connection):
     prints the output on the terminal. Function returns nothing. '''
     print(f"================= {header_query} =================")
     query_output = pd.read_sql(query_statement, sql_connection)
-    query_output = pd.read_sql(query_statement, sql_connection)
     print(query_output)
 
 def log_progress(message):
